@@ -8,6 +8,7 @@ function llenarCafetera(){
 
 function servirTaza(cant){
 	this.cantidadActual = this.cantidadActual-cant;
+	this.cantidadActual <= 0 ? this.cantidadActual = 0 : null;
 	actualizarPorcentaje();
 }
 
@@ -18,6 +19,7 @@ function vaciarCafetera(){
 
 function agregarCafe(cant){
 	this.cantidadActual = this.cantidadActual+cant;
+	this.cantidadActual >= 100 ? this.cantidadActual = 100 : null;
 	actualizarPorcentaje();
 }
 
