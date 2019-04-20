@@ -1,3 +1,19 @@
-img{
-	max-height: 300px;
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-height: 300px;
+}
+
+.badge {
+    font-size: 1.2em;
+}
+
+.progress {
+    transform: rotate(-90deg);
 }
